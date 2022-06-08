@@ -1,0 +1,12 @@
+class Solution {
+    static int countSquares(int N) {
+        int c=0;
+        for(int i=0;i<Math.sqrt(N);i++)
+        {
+            if((i+1)*(i+1)<N)
+            c++;
+        }
+        return c;
+        // code here
+    }
+}
